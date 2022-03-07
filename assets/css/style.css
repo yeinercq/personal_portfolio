@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Numans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sidebar {
+  min-width: 25rem;
+  max-width: 25rem;
+  min-height: 100vh;
+}
+
+.sidebar.active {
+  margin-left: -25rem;
+}
