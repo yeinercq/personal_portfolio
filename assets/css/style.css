@@ -12,20 +12,81 @@ html {
 
 body {
   font-size: 1.6rem;
+  background: #fafafa;
 }
 
 .container {
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 100%;
   align-items: stretch;
 }
 
-.sidebar {
+#sidebar {
+  background: #7386D5;
+  color: #ffff;
+  transition: all 0.3s;
   min-width: 25rem;
   max-width: 25rem;
   min-height: 100vh;
 }
 
-.sidebar.active {
+#sidebar.active {
   margin-left: -25rem;
+}
+
+#sidebar .sidebar-header {
+  padding: 2rem;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  list-style: none;
+  padding: 2rem 1rem;
+  border-top: 0.1rem solid #47748b;
+  border-bottom: 0.1rem solid #47748b;
+}
+
+#sidebar ul li a {
+  padding: 1rem;
+  font-size: 2.2rem;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #7386D5;
+  background: #fff;
+}
+
+#sidebar ul li a i {
+  padding-right: 0.8rem;
+}
+
+#sidebar ul li i {
+  width: 3rem;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
+  font-size: 2.8rem;
+  padding: 1rem 0;
+  display: block;
+  justify-content: space-evenly;
 }
